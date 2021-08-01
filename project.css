@@ -1,0 +1,37 @@
+img {
+  width: 150px;
+
+  height: 150px;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+  color: red;
+}
+h2 {
+  font-size: 2em;
+  color: red;
+}
+p {
+  font-size: 1.5em;
+}
+body {
+  background-color: lightgray;
+}
+.blue-box {
+  display: inline-block;
+  background-color: blue;
+  text-align: center;
+  padding: 10px;
+  margin: 0px;
+  color: white;
+}
+.blue-box2 {
+  display: none;
+  background-color: blue;
+  text-align: center;
+  padding: 10px;
+  margin: 0px;
+  color: white;
+}
