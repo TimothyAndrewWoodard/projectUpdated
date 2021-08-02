@@ -20,7 +20,7 @@ body {
   background-color: lightgray;
 }
 .blue-box {
-  display: inline-block;
+  display: block;
   background-color: blue;
   text-align: center;
   padding: 10px;

@@ -53,7 +53,12 @@ button.addEventListener('click', () => {
   document.getElementById('notation1').value = '';
   userAnswers[i] = str.toLowerCase();
 
-  if (userAnswers[i] === questionAnswers[i]) {
+  const button2 = document.getElementById('btn2');
+  button2.addEventListener('click', () => {
+    resetQuiz();
+  });
+
+  if (userAnswers[i] == questionAnswers[i]) {
     score++;
     userGrades.push(true);
   } else {
@@ -65,7 +70,7 @@ button.addEventListener('click', () => {
   questionCounter++;
   if (questionCounter > maxQuestions) {
     blueBox.style.display = 'none';
-    blueBox2.style.display = 'inline';
+    blueBox2.style.display = 'block';
     //resetQuiz();
   } else {
     getNewQuestion();
@@ -80,6 +85,13 @@ getNewQuestion = () => {
 resetQuiz = () => {
   question.innerText = puzzleprincipals[0];
   image.src = puzzleimages[0];
+  blueBox.style.display = 'block';
+  blueBox2.style.display = 'none';
+  score = 0;
+  questionCounter = 0;
+  i = 0;
+  j = 1;
+  document.getElementById('myTable').innerHTML = '';
 };
 gradeAnswer = () => {
   {
